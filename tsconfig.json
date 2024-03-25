@@ -27,7 +27,7 @@
     "allowSyntheticDefaultImports": true,
     "forceConsistentCasingInFileNames": true,
   },
-  "include": ["vite.config.ts", ".eslintrc.cjs", "src"],
+  "include": ["vite.config.ts", ".eslintrc.cjs", "commitlint.config.js", "src"],
   "exclude": ["dist", "node_modules/"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

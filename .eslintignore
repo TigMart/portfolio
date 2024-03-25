@@ -1,0 +1,10 @@
+.eslintrc.cjs
+jest.config.ts
+
+node_modules/**/*
+dist/**/*
+coverage/**/*
+**/dist
+**/node_modules
+**/coverage
+__mocks__

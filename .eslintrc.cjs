@@ -22,7 +22,7 @@ module.exports = {
       },
     },
   ],
-  plugins: ['@typescript-eslint', 'react', 'prettier', 'import', 'unused-imports'],
+  plugins: ['react', 'prettier', 'import', 'unused-imports'],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaVersion: 'latest',
@@ -37,10 +37,16 @@ module.exports = {
     node: true,
     es2021: true,
   },
+  settings: {
+    'import/resolver': {
+      typescript: {},
+    },
+  },
   rules: {
     'react/react-in-jsx-scope': 0,
     'react/jsx-uses-react': 0,
     '@typescript-eslint/no-floating-promises': 1,
+    'import/no-unresolved': [2, { commonjs: true, amd: true }],
     'import/no-extraneous-dependencies': [
       'error',
       {

@@ -46,7 +46,6 @@ module.exports = {
     'react/react-in-jsx-scope': 0,
     'react/jsx-uses-react': 0,
     '@typescript-eslint/no-floating-promises': 1,
-    'import/no-unresolved': [2, { commonjs: true, amd: true }],
     'import/no-extraneous-dependencies': [
       'error',
       {

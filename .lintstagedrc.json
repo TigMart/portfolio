@@ -1,6 +1,3 @@
 {
-  "*.+(js|jsx|yml|yaml|css|less|scss|ts|tsx|md|graphql|mdx)": [
-    "eslint --fix --max-warnings=0",
-    "prettier --write"
-  ]
+  "*.+(js|jsx|yml|yaml|less|scss|ts|tsx|md|graphql|mdx)": ["eslint --fix --max-warnings=0", "prettier --write"]
 }

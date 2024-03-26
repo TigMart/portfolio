@@ -1,0 +1,86 @@
+import { defaultFonts } from './fonts';
+
+// Styles which will be injected in page's head
+export const fontDefs = `
+    @font-face {
+        font-family: 'portfolio-font-am';
+        src: local('Noto Sans Armenian Thin'), local('NotoSansArmenian-Thin'),
+            url('NotoSansArmenian-Thin.woff2') format('woff2'),
+            url('NotoSansArmenian-Thin.ttf') format('truetype');
+        font-weight: 100;
+        font-style: normal;
+        font-display: swap;
+    }
+    @font-face {
+        font-family: 'portfolio-font-am';
+        src: local('Noto Sans Armenian ExtraLight'), local('NotoSansArmenian-ExtraLight'),
+            url('NotoSansArmenian-ExtraLight.woff2') format('woff2'),
+            url('NotoSansArmenian-ExtraLight.ttf') format('truetype');
+        font-weight: 200;
+        font-style: normal;
+        font-display: swap;
+    }
+    @font-face {
+        font-family: 'portfolio-font-am';
+        src: local('Noto Sans Armenian Light'), local('NotoSansArmenian-Light'),
+            url('NotoSansArmenian-Light.woff2') format('woff2'),
+            url('NotoSansArmenian-Light.ttf') format('truetype');
+        font-weight: 300;
+        font-style: normal;
+        font-display: swap;
+    }
+    @font-face {
+        font-family: 'portfolio-font-am';
+        src: local('Noto Sans Armenian Regular'), local('NotoSansArmenian-Regular'),
+            url('NotoSansArmenian-Regular.woff2') format('woff2'),
+            url('NotoSansArmenian-Regular.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+    }
+    @font-face {
+        font-family: 'portfolio-font-am';
+        src: local('Noto Sans Armenian Medium'), local('NotoSansArmenian-Medium'),
+            url('NotoSansArmenian-Medium.woff2') format('woff2'),
+            url('NotoSansArmenian-Medium.ttf') format('truetype');
+        font-weight: 500;
+        font-style: normal;
+        font-display: swap;
+    }
+    @font-face {
+        font-family: 'portfolio-font-am';
+        src: local('Noto Sans Armenian SemiBold'), local('NotoSansArmenian-SemiBold'),
+            url('NotoSansArmenian-SemiBold.woff2') format('woff2'),
+            url('NotoSansArmenian-SemiBold.ttf') format('truetype');
+        font-weight: 600;
+        font-style: normal;
+        font-display: swap;
+    }
+    @font-face {
+        font-family: 'portfolio-font-am';
+        src: local('Noto Sans Armenian Bold'), local('NotoSansArmenian-Bold'),
+            url('NotoSansArmenian-Bold.woff2') format('woff2'),
+            url('NotoSansArmenian-Bold.ttf') format('truetype');
+        font-weight: 700;
+        font-style: normal;
+        font-display: swap;
+    }
+    @font-face {
+        font-family: 'portfolio-font-am';
+        src: local('Noto Sans Armenian Black'), local('NotoSansArmenian-Black'),
+            url('NotoSansArmenian-Black.woff2') format('woff2'),
+            url('NotoSansArmenian-Black.ttf') format('truetype');
+        font-weight: 900;
+        font-style: normal;
+        font-display: swap;
+    }
+`;
+
+const preload = `
+html, body {
+  font-family: ${defaultFonts};
+  font-weight: 400;
+}
+`;
+
+export default preload;

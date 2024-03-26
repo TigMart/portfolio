@@ -28,7 +28,6 @@ module.exports = {
     ecmaVersion: 'latest',
     sourceType: 'module',
     project: './tsconfig.json',
-    extraFileExtensions: ['.css'],
     ecmaFeatures: {
       jsx: true,
     },

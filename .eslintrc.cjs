@@ -6,8 +6,8 @@ module.exports = {
     'plugin:@typescript-eslint/recommended',
     'plugin:@typescript-eslint/recommended-requiring-type-checking',
     'plugin:react/recommended',
-    'plugin:react/jsx-runtime',
     'plugin:import/recommended',
+    'plugin:react/jsx-runtime',
     'prettier',
     'plugin:prettier/recommended',
   ],
@@ -46,6 +46,7 @@ module.exports = {
     'react/react-in-jsx-scope': 0,
     'react/jsx-uses-react': 0,
     '@typescript-eslint/no-floating-promises': 1,
+    'no-restricted-exports': 0,
     'import/no-extraneous-dependencies': [
       'error',
       {
@@ -64,6 +65,7 @@ module.exports = {
         },
       },
     ],
+
     '@typescript-eslint/no-unused-vars': 'warn',
     'unused-imports/no-unused-imports': 'error',
     'unused-imports/no-unused-vars': [

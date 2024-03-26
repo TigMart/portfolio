@@ -1,16 +1,24 @@
 {
   "compilerOptions": {
     "target": "ES5",
-    "lib": ["DOM", "DOM.Iterable","ESNext"],
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
     "module": "ESNext",
     "skipLibCheck": true,
-    "baseUrl": "src",
     "declaration": true,
     "declarationDir": "dist",
     "allowJs": false,
     "sourceMap": true,
     "esModuleInterop": true,
- 
+    "rootDir": ".",
+    "baseUrl": "./",
+    "paths": {
+      "@assets/*": ["src/assets/*"],
+      "@components/*": ["src/components/*"],
+      "@constants/*": ["src/constants/*"],
+      "@layouts/*": ["src/layouts/*"],
+      "@pages/*": ["src/pages/*"]
+    },
+
     /* Bundler mode */
     "moduleResolution": "Node",
     "allowImportingTsExtensions": true,
@@ -25,9 +33,9 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
     "allowSyntheticDefaultImports": true,
-    "forceConsistentCasingInFileNames": true,
+    "forceConsistentCasingInFileNames": true
   },
-  "include": ["vite.config.ts", ".eslintrc.cjs", "commitlint.config.js", "src"],
+  "include": ["vite.config.ts", ".eslintrc.cjs", "src"],
   "exclude": ["dist", "node_modules/"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

@@ -12,7 +12,6 @@ const lng = {
 
 function Home() {
   const { t, i18n } = useTranslation();
-  console.log(import.meta.env.NODE_ENV !== 'production');
   return (
     <>
       <Helmet>

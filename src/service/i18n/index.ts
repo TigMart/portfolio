@@ -9,7 +9,7 @@ i18next
   .use(LanguageDetector)
   .use(Backend)
   .init({
-    debug: import.meta.env.NODE_ENV !== 'production',
+    debug: process.env.NODE_ENV !== 'production',
     fallbackLng: 'en',
   });
 

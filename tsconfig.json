@@ -17,7 +17,8 @@
       "@hooks/*": ["src/hooks/*"],
       "@layouts/*": ["src/layouts/*"],
       "@pages/*": ["src/pages/*"],
-      "@store/*": ["src/store/*"]
+      "@store/*": ["src/store/*"],
+      "@constants/*": ["src/constants/*"],
     },
 
     /* Bundler mode */

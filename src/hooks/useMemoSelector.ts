@@ -1,6 +1,6 @@
 import { useRef } from 'react';
-import isEqual from 'react-fast-compare';
 import { TypedUseSelectorHook, useSelector as useSelectorGeneric } from 'react-redux';
+import isEqual from 'react-fast-compare';
 
 import { IRootState } from '@store/store';
 

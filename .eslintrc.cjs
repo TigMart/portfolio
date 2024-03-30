@@ -47,6 +47,7 @@ module.exports = {
     'react/jsx-uses-react': 0,
     '@typescript-eslint/no-floating-promises': 1,
     'no-restricted-exports': 0,
+    'no-param-reassign': 0,
     'import/no-extraneous-dependencies': [
       'error',
       {

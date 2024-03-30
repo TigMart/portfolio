@@ -1,6 +1,5 @@
 function App() {
-  // console.log(isDarkMode());
-  return <div>Hello World test test</div>;
+  return <div>App</div>;
 }
 
 export default App;

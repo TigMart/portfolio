@@ -10,6 +10,7 @@ function Home() {
         <title>{PAGETITLES.HOME}</title>
       </Helmet>
       <Header />
+      <h1 style={{ textAlign: 'center', color: 'white' }}>Coming Soon...</h1>
     </>
   );
 }

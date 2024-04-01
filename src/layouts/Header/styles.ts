@@ -58,6 +58,7 @@ const useStyles = createUseStyles<string, StyleProps, ITheme>(
         marginRight: (props: StyleProps) => (props.isGapSupport ? '' : '6rem'),
         [mediaQueryMax(breakpoints.laptop)]: {
           marginBottom: (props: StyleProps) => (props.isGapSupport ? '' : '3rem'),
+          marginRight: '0 !important',
         },
       },
     },

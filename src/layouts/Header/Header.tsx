@@ -2,9 +2,11 @@ import { Link } from 'react-router-dom';
 import classNames from 'classnames';
 import { useTranslation } from 'react-i18next';
 import { v4 as uuidv4 } from 'uuid';
+import { useState } from 'react';
 
 import useGapSupport from '@hooks/useGapSupport';
 import Button from '@components/common/Button';
+import SvgIcon from '@components/helpers/SvgIcon';
 
 import useStyles from './styles';
 
@@ -16,7 +18,8 @@ const LANG = {
 function Header() {
   const { t, i18n } = useTranslation();
   const isGapSupport = useGapSupport();
-  const classes = useStyles({ isGapSupport });
+  const [isOpen, setIsOpen] = useState<boolean>(false);
+  const classes = useStyles({ isGapSupport, isOpen });
 
   const handleLanguageChange = (lng: string) => {
     i18n.changeLanguage(lng).catch(() => {});
@@ -29,7 +32,7 @@ function Header() {
           <img src="/logo.webp" alt="Tigran's portfolio logo" width={40} height={48} />
         </Link>
 
-        <nav>
+        <nav className={classes.nav}>
           <ul className={classes.navList}>
             {Array.from({ length: 4 }).map((_, index) => (
               <li key={uuidv4()} className={classes.item}>
@@ -38,6 +41,7 @@ function Header() {
                 </a>
               </li>
             ))}
+            <Button className={classes.mobileHireBtn} name={t('header.button')} />
           </ul>
         </nav>
         <div className={classes.right}>
@@ -48,7 +52,11 @@ function Header() {
               </button>
             ))}
           </div>
-          <Button name={t('header.button')} />
+          <Button className={classes.hireBtn} name={t('header.button')} />
+          <button type="button" className={classes.mobileNavBtn} onClick={() => setIsOpen(!isOpen)} aria-label="mobile navigation button">
+            <SvgIcon className={classes.mobileNavIcon} icon="icon_humburger" name="humburger" width={32} height={32} />
+            <SvgIcon className={classes.mobileNavIcon} icon="icon_close_humburger" name="close-humburger" width={32} height={32} />
+          </button>
         </div>
       </div>
     </header>

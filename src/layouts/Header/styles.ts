@@ -30,7 +30,8 @@ const useStyles = createUseStyles<string, StyleProps, ITheme>(
     nav: {
       [mediaQueryMax(breakpoints.laptop)]: {
         position: 'absolute',
-        right: (props: StyleProps) => (props.isOpen ? '0' : '-100%'),
+        display: (props: StyleProps) => (props.isOpen ? 'block' : 'none'),
+        right: 0,
         top: '8rem',
         minWidth: '220px',
         width: '30%',
@@ -38,6 +39,7 @@ const useStyles = createUseStyles<string, StyleProps, ITheme>(
         padding: spacings.s32,
         backfaceVisibility: 'hidden',
         transition: 'all .3s ease',
+        zIndex: 9,
       },
       [mediaQueryMax(600)]: {
         padding: spacings.s16,
@@ -54,12 +56,10 @@ const useStyles = createUseStyles<string, StyleProps, ITheme>(
       },
     },
     item: {
-      '&:not(:last-child)': {
-        marginRight: (props: StyleProps) => (props.isGapSupport ? '' : '6rem'),
-        [mediaQueryMax(breakpoints.laptop)]: {
-          marginBottom: (props: StyleProps) => (props.isGapSupport ? '' : '3rem'),
-          marginRight: '0 !important',
-        },
+      marginRight: (props: StyleProps) => (props.isGapSupport ? '0' : '6rem'),
+      [mediaQueryMax(breakpoints.laptop)]: {
+        marginRight: (props: StyleProps) => (props.isGapSupport ? '0' : '0rem'),
+        marginBottom: (props: StyleProps) => (props.isGapSupport ? '0' : '3rem'),
       },
     },
     link: {
@@ -91,7 +91,7 @@ const useStyles = createUseStyles<string, StyleProps, ITheme>(
     languageBtn: {
       fontSize: '1.6rem',
       color: colors.text.tint2,
-      marginRight: (props: StyleProps) => (props.isGapSupport ? '' : '3rem'),
+      marginRight: (props: StyleProps) => (props.isGapSupport ? '0' : '3rem'),
       '&:disabled': {
         display: 'none',
       },
@@ -120,7 +120,7 @@ const useStyles = createUseStyles<string, StyleProps, ITheme>(
       },
     },
   }),
-  { name: 'header' },
+  { name: 'header', link: true },
 );
 
 export default useStyles;

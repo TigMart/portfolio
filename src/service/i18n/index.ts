@@ -11,6 +11,7 @@ i18next
   .init({
     debug: process.env.NODE_ENV !== 'production',
     fallbackLng: 'en',
+    saveMissing: true,
   });
 
 export default i18next;

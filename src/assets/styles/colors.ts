@@ -28,10 +28,12 @@ const colors = {
 
         '--dark-text-color-tint-1': '#ffffff',
         '--dark-text-color-tint-2': '#959595',
+        '--dark-text-color-tint-3': '#FD6F00',
 
         // Gradients
 
         '--dark-bg-gradient-1': 'linear-gradient(90deg, rgba(253,111,0,1) 0%, rgba(228,100,0,1) 100%)',
+        '--dark-bg-gradient-2': 'linear-gradient(90deg, rgba(228,100,0,1) 0%, rgba(253,111,0,1) 100%)',
       },
 
       /// ////////////// Light ////////////////
@@ -62,9 +64,11 @@ const colors = {
 
         '--light-text-color-tint-1': '#ffffff',
         '--light-text-color-tint-2': '#959595',
+        '--light-text-color-tint-3': '#FD6F00',
 
         // Gradients
         '--light-bg-gradient-1': 'linear-gradient(90deg, rgba(253,111,0,1) 0%, rgba(228,100,0,1) 100%)',
+        '--light-bg-gradient-2': 'linear-gradient(90deg, rgba(228,100,0,1) 0%, rgba(253,111,0,1) 100%)',
       },
     },
   },

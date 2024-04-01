@@ -1,6 +1,7 @@
 import { configureStore } from '@reduxjs/toolkit';
 import { FLUSH, PAUSE, PERSIST, PURGE, REGISTER, REHYDRATE, persistReducer } from 'redux-persist';
 import storage from 'redux-persist/lib/storage';
+import { useDispatch } from 'react-redux';
 
 import rootReducer from './rootReducer';
 
@@ -25,6 +26,7 @@ const store = configureStore({
 
 type IRootState = ReturnType<typeof store.getState>;
 type AppDispatch = typeof store.dispatch;
+export const useAppDispatch: () => AppDispatch = useDispatch;
 
 export default store;
 export type { IRootState, AppDispatch };

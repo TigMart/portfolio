@@ -1,3 +1,6 @@
 {
-    "key": "Val"
+    "header":{
+        "nav":["Home", "About me", "Portfolio", "Contact me"],
+        "button": "Hire me" 
+    }
 }

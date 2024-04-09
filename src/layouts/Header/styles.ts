@@ -32,9 +32,10 @@ const useStyles = createUseStyles<string, StyleProps, ITheme>(
         position: 'absolute',
         display: (props: StyleProps) => (props.isOpen ? 'block' : 'none'),
         right: 0,
-        top: '8rem',
+        top: '7rem',
         minWidth: '220px',
         width: '30%',
+        background: 'rgba(0, 0, 0, 0.6)',
         boxShadow: 'rgba(0, 0, 0, 0.6) 0px 2px 4px',
         padding: spacings.s32,
         backfaceVisibility: 'hidden',
@@ -120,7 +121,7 @@ const useStyles = createUseStyles<string, StyleProps, ITheme>(
       },
     },
   }),
-  { name: 'header', link: true },
+  { name: 'header' },
 );
 
 export default useStyles;

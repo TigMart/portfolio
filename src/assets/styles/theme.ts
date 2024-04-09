@@ -45,11 +45,15 @@ const DarkColors: IColors = {
   background: {
     tint1: 'var(--dark-bg-tint-1)',
     tint2: 'var(--dark-bg-tint-2)',
+    tint3: 'var(--dark-bg-tint-3)',
+    tint4: 'var(--dark-bg-tint-4)',
   },
   text: {
     tint1: 'var(--dark-text-color-tint-1)',
     tint2: 'var(--dark-text-color-tint-2)',
     tint3: 'var(--dark-text-color-tint-3)',
+    tint4: 'var(--dark-text-color-tint-4)',
+    tint5: 'var(--dark-text-color-tint-5)',
   },
   border: {
     tint1: 'var(--dark-border-tint-1)',
@@ -66,6 +70,7 @@ const DarkColors: IColors = {
   gradient: {
     tint1: 'var(--dark-bg-gradient-1)',
     tint2: 'var(--dark-bg-gradient-2)',
+    tint3: 'var(--dark-bg-gradient-3)',
   },
 };
 
@@ -76,11 +81,15 @@ const LightColors: IColors = {
   background: {
     tint1: 'var(--light-bg-tint-1)',
     tint2: 'var(--light-bg-tint-2)',
+    tint3: 'var(--light-bg-tint-3)',
+    tint4: 'var(--light-bg-tint-4)',
   },
   text: {
     tint1: 'var(--light-text-color-tint-1)',
     tint2: 'var(--light-text-color-tint-2)',
     tint3: 'var(--light-text-color-tint-3)',
+    tint4: 'var(--light-text-color-tint-4)',
+    tint5: 'var(--light-text-color-tint-5)',
   },
   border: {
     tint1: 'var(--light-border-tint-1)',
@@ -96,6 +105,7 @@ const LightColors: IColors = {
   gradient: {
     tint1: 'var(--light-bg-gradient-1)',
     tint2: 'var(--light-bg-gradient-2)',
+    tint3: 'var(--light-bg-gradient-3)',
   },
 };
 

@@ -9,7 +9,7 @@ export type IconTypes =
   | 'icon_moon'
   | 'icon_sun'
   | 'icon_AmFlag'
-  | 'icon_facebook'
+  | 'icon_github'
   | 'icon_linkedin'
   | 'icon_instagram';
 

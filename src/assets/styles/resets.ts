@@ -34,7 +34,7 @@ const resets = {
       // WebkitUserSelect: 'none',
       WebkitTapHighlightColor: 'rgba(0, 0, 0, .05)',
       lineHeight: 1,
-      overflow: 'hidden',
+      overflowX: 'hidden',
     },
     'ol, ul': {
       listStyle: 'none',

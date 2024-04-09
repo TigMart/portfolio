@@ -19,10 +19,10 @@ const useStyles = createUseStyles<string, IButtonProps, ITheme>(
       },
       secondary: {
         regular: colors.transparent,
-        hover: colors.gradient.tint2,
-        textColorRegular: colors.text.tint1,
-        textColorHover: colors.text.tint1,
-        borderColor: colors.gradient.tint2,
+        hover: colors.background.tint2,
+        textColorRegular: colors.text.tint2,
+        textColorHover: colors.text.tint2,
+        borderColor: colors.border.tint1,
       },
     };
 
@@ -44,7 +44,7 @@ const useStyles = createUseStyles<string, IButtonProps, ITheme>(
               return '';
           }
         },
-        fontWeight: FontWeight.Medium,
+        fontWeight: FontWeight.Bold,
         lineHeight: 'normal',
         transition: 'all .3s ease',
 
@@ -71,8 +71,8 @@ const useStyles = createUseStyles<string, IButtonProps, ITheme>(
         },
         // backgroundColor: ({ styleType = 'primary' }) => (styleType ? typeColors[styleType]?.regular : ''),
         background: ({ styleType = 'primary' }) => (styleType ? typeColors[styleType]?.regular : ''),
-        border: ({ styleType = 'primary' }) => (styleType === 'secondary' ? '1px solid transparent' : 'none'),
-        borderColor: ({ styleType = 'primary' }) => (styleType !== 'secondary' ? typeColors[styleType].borderColor : ''),
+        border: ({ styleType = 'primary' }) => (styleType === 'secondary' ? '2px solid transparent' : 'none'),
+        borderColor: ({ styleType = 'primary' }) => typeColors[styleType].borderColor,
         color: ({ styleType = 'primary' }) => (styleType ? typeColors[styleType]?.textColorRegular : ''),
 
         padding: ({ size, padding, icon, iconLeft, iconRight }: IButtonProps) => {

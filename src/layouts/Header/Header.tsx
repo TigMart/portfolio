@@ -24,6 +24,9 @@ function Header() {
   const handleLanguageChange = (lng: string) => {
     i18n.changeLanguage(lng).catch(() => {});
   };
+  const handleHireMe = () => {
+    window.location.href = 'mailto:tigran.v.mart@gmail.com?subject=Job%20Application&body=Hello%20Tigran';
+  };
 
   return (
     <header className={classes.root}>
@@ -41,7 +44,7 @@ function Header() {
                 </a>
               </li>
             ))}
-            <Button className={classes.mobileHireBtn} name={t('header.button')} />
+            <Button onClick={handleHireMe} className={classes.mobileHireBtn} name={t('header.button')} />
           </ul>
         </nav>
         <div className={classes.right}>
@@ -52,7 +55,7 @@ function Header() {
               </button>
             ))}
           </div>
-          <Button className={classes.hireBtn} name={t('header.button')} />
+          <Button onClick={handleHireMe} className={classes.hireBtn} name={t('header.button')} />
           <button type="button" className={classes.mobileNavBtn} onClick={() => setIsOpen(!isOpen)} aria-label="mobile navigation button">
             <SvgIcon className={classes.mobileNavIcon} icon="icon_humburger" name="humburger" width={32} height={32} />
             <SvgIcon className={classes.mobileNavIcon} icon="icon_close_humburger" name="close-humburger" width={32} height={32} />

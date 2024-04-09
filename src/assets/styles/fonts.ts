@@ -15,10 +15,18 @@ export enum FontWeight {
 export const typography = {
   H1: {
     fontSize: '64px',
-    lineHeight: 'normal',
-    [mediaQueryMax(themeDark.breakpoints.mobile)]: {
+    lineHeight: '77px',
+    [mediaQueryMax(668)]: {
       fontSize: '44px',
-      lineHeight: 'normal',
+      lineHeight: '53px',
+    },
+    [mediaQueryMax(450)]: {
+      fontSize: '36px',
+      lineHeight: '44px',
+    },
+    [mediaQueryMax(376)]: {
+      fontSize: '32px',
+      lineHeight: '40px',
     },
   },
   H2: {
@@ -27,6 +35,25 @@ export const typography = {
     [mediaQueryMax(themeDark.breakpoints.mobile)]: {
       fontSize: '24px',
       lineHeight: 'normal',
+    },
+  },
+  t1: {
+    fontSize: '16px',
+    lineHeight: '26px',
+    letterSpacing: '0.5px',
+  },
+  t2: {
+    fontSize: '20px',
+    lineHeight: '24px',
+    letterSpacing: '0.5px',
+  },
+  t3: {
+    fontSize: '20px',
+    lineHeight: '32px',
+    letterSpacing: '0.5px',
+    [mediaQueryMax(themeDark.breakpoints.mobile)]: {
+      fontSize: '16px',
+      lineHeight: '26px',
     },
   },
 };

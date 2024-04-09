@@ -1,6 +1,14 @@
 {
-    "header":{
-        "nav":["Home", "About me", "Portfolio", "Contact me"],
-        "button": "Hire me" 
-    }
+  "header": {
+    "nav": ["Home", "About me", "Portfolio", "Contact me"],
+    "button": "Hire me"
+  },
+  "intro": {
+    "sayHi": "Hi I am",
+    "fullName": "Tigran Martirosyan",
+    "profession": "Front-End Developer",
+    "buttonHire": "Hire Me",
+    "buttonCV": "Download CV",
+    "info": ["Experiences", "Project done"]
+  }
 }

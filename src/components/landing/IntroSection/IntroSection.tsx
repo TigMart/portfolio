@@ -62,7 +62,7 @@ function IntroSection() {
             <source media="(min-width: 576px) and (max-width: 668px)" srcSet={`${myImage}?w=403&dpr=1 1x, ${myImage}?w=403&dpr=2 2x`} />
             <source media="(min-width: 668px) and (max-width: 1350px)" srcSet={`${myImage}?w=448&dpr=1 1x, ${myImage}?w=448&dpr=2 2x`} />
             <source media="(min-width: 1350px)" srcSet={`${myImage}?w=560&dpr=1 1x, ${myImage}?w=560&dpr=2 2x`} />
-            <img className={classes.myImg} srcSet={`${myImage}?w=560&dpr=1 1x, ${myImage}?w=560&dpr=2 2x`} alt="Tigran Martirosyan" width={560} height={675} />
+            <img className={classes.myImg} srcSet={`${myImage}?w=560&dpr=1 1x, ${myImage}?w=560&dpr=2 2x`} alt="Tigran Martirosyan" width={560} height={675} loading="lazy" />
           </picture>
         </div>
       </div>

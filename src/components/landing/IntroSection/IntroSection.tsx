@@ -57,7 +57,13 @@ function IntroSection() {
           </div>
         </div>
         <div className={classes.right}>
-          <img className={classes.myImg} src={myImage} alt="Tigran Martirosyan" width={560} height={675} />
+          <picture>
+            <source media="(max-width: 576px)" srcSet={`${myImage}?w=362&dpr=1 1x, ${myImage}?w=362&dpr=2 2x`} />
+            <source media="(min-width: 576px) and (max-width: 668px)" srcSet={`${myImage}?w=403&dpr=1 1x, ${myImage}?w=403&dpr=2 2x`} />
+            <source media="(min-width: 668px) and (max-width: 1350px)" srcSet={`${myImage}?w=448&dpr=1 1x, ${myImage}?w=448&dpr=2 2x`} />
+            <source media="(min-width: 1350px)" srcSet={`${myImage}?w=560&dpr=1 1x, ${myImage}?w=560&dpr=2 2x`} />
+            <img className={classes.myImg} src={`${myImage}?w=560&dpr=1`} alt="Tigran Martirosyan" width={560} height={675} />
+          </picture>
         </div>
       </div>
     </section>

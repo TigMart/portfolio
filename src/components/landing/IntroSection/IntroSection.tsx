@@ -1,4 +1,5 @@
 import classNames from 'classnames';
+import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
 import myImage from '@assets/images/photo.webp';
@@ -12,7 +13,9 @@ import useStyles from './styles';
 function IntroSection() {
   const { t } = useTranslation();
   const isGapSupport = useGapSupport();
-  const classes = useStyles({ isGapSupport });
+  const [isLoading, setIsLoading] = useState<boolean>(false);
+
+  const classes = useStyles({ isGapSupport, isLoading });
   const handleDownloadCV = () => {
     const link = document.createElement('a');
     link.href = myCV;
@@ -57,13 +60,7 @@ function IntroSection() {
           </div>
         </div>
         <div className={classes.right}>
-          <picture>
-            <source media="(max-width: 576px)" srcSet={`${myImage}?w=362&dpr=1 1x, ${myImage}?w=362&dpr=2 2x`} />
-            <source media="(min-width: 576px) and (max-width: 668px)" srcSet={`${myImage}?w=403&dpr=1 1x, ${myImage}?w=403&dpr=2 2x`} />
-            <source media="(min-width: 668px) and (max-width: 1350px)" srcSet={`${myImage}?w=448&dpr=1 1x, ${myImage}?w=448&dpr=2 2x`} />
-            <source media="(min-width: 1350px)" srcSet={`${myImage}?w=560&dpr=1 1x, ${myImage}?w=560&dpr=2 2x`} />
-            <img className={classes.myImg} srcSet={`${myImage}?w=560&dpr=1 1x, ${myImage}?w=560&dpr=2 2x`} alt="Tigran Martirosyan" width={560} height={675} loading="lazy" />
-          </picture>
+          <img className={classes.myImg} src={myImage} alt="Tigran Martirosyan" width={560} height={675} loading="lazy" onLoad={() => setIsLoading(!isLoading)} />
         </div>
       </div>
     </section>

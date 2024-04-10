@@ -3,7 +3,7 @@ import { createSlice, PayloadAction, Slice } from '@reduxjs/toolkit';
 import { ILoading } from '@store/types';
 
 const initialState: ILoading = {
-  isLoading: false,
+  isLoading: true,
 };
 
 const loadingSlice: Slice<ILoading> = createSlice({

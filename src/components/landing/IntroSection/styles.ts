@@ -5,6 +5,7 @@ import vector from '@assets/images/vector.webp';
 
 type StyleProps = {
   isGapSupport: boolean;
+  isLoading: boolean;
 };
 
 const useStyles = createUseStyles<string, StyleProps, ITheme>(
@@ -59,6 +60,7 @@ const useStyles = createUseStyles<string, StyleProps, ITheme>(
     },
     right: {
       flex: '1',
+      position: 'relative',
     },
     sayHi: {
       width: 'fit-content',
@@ -178,6 +180,10 @@ const useStyles = createUseStyles<string, StyleProps, ITheme>(
       fontWeight: FontWeight.Bold,
     },
     myImg: {
+      display: 'block',
+      aspectRatio: '1 / 1',
+      objectFit: 'cover',
+      objectPosition: 'center',
       [mediaQueryMax(breakpoints.mediumDesktop)]: {
         width: '448px',
         height: '540px',
@@ -194,6 +200,8 @@ const useStyles = createUseStyles<string, StyleProps, ITheme>(
         width: '100%',
         height: '100%',
       },
+      opacity: (props: StyleProps) => (props.isLoading ? 1 : 0),
+      transition: 'opacity 250ms ease-in-out',
     },
   }),
   { name: 'intro-section' },

@@ -32,6 +32,7 @@ const colors = {
         '--dark-text-color-tint-3': '#FD6F00',
         '--dark-text-color-tint-4': '#707070',
         '--dark-text-color-tint-5': '#DFDFDF',
+        '--dark-text-color-tint-6': '#FEFEFE',
 
         // Gradients
 
@@ -72,6 +73,7 @@ const colors = {
         '--light-text-color-tint-3': '#FD6F00',
         '--light-text-color-tint-4': '#707070',
         '--light-text-color-tint-5': '#DFDFDF',
+        '--light-text-color-tint-6': '#FEFEFE',
 
         // Gradients
         '--light-bg-gradient-1': 'linear-gradient(90deg, rgba(253,111,0,1) 0%, rgba(228,100,0,1) 100%)',

@@ -7,6 +7,7 @@ import { useState } from 'react';
 import useGapSupport from '@hooks/useGapSupport';
 import Button from '@components/common/Button';
 import SvgIcon from '@components/helpers/SvgIcon';
+import SECTIONS from '@constants/sections';
 
 import useStyles from './styles';
 
@@ -37,9 +38,9 @@ function Header() {
 
         <nav className={classes.nav}>
           <ul className={classes.navList}>
-            {Array.from({ length: 4 }).map((_, index) => (
+            {SECTIONS.map((section, index) => (
               <li key={uuidv4()} className={classes.item}>
-                <a href="/" className={classes.link}>
+                <a href={section} className={classes.link}>
                   {t(`header.nav.${index}`)}
                 </a>
               </li>
@@ -50,7 +51,13 @@ function Header() {
         <div className={classes.right}>
           <div>
             {Object.keys(LANG).map(lng => (
-              <button className={classes.languageBtn} type="button" key={lng} onClick={() => handleLanguageChange(lng)} disabled={i18n.resolvedLanguage === lng}>
+              <button
+                className={classes.languageBtn}
+                type="button"
+                key={lng}
+                onClick={() => handleLanguageChange(lng)}
+                disabled={i18n.resolvedLanguage === lng}
+              >
                 {lng.toUpperCase()}
               </button>
             ))}

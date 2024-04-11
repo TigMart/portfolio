@@ -84,27 +84,7 @@ export const SvgIconTypes: {
     viewBoxW: 24,
     viewBoxH: 24,
   },
-  icon_instagram: {
-    svg: (
-      <>
-        <g clipPath="url(#clip0_4329_14085)">
-          <path
-            fillRule="evenodd"
-            clipRule="evenodd"
-            d="M12 23C18.0751 23 23 18.0751 23 12C23 5.92487 18.0751 1 12 1C5.92487 1 1 5.92487 1 12C1 18.0751 5.92487 23 12 23ZM12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24Z"
-          />
-          <path d="M11.9151 17.7589C10.8615 17.7589 9.80796 17.822 8.81636 17.7589C7.39093 17.6328 6.83315 17.1281 6.58525 15.6142C6.27538 13.848 6.15143 12.1449 6.33736 10.3786C6.39933 9.74784 6.4613 9.05396 6.58525 8.42316C6.77118 7.09849 7.32896 6.53078 8.63044 6.21538C9.18821 6.08922 9.68402 6.02613 10.2418 6.08921C11.4193 6.15229 12.5968 6.15229 13.7744 6.02613C14.3321 5.96305 14.8279 6.02613 15.3857 6.08921C16.4393 6.21537 17.183 6.7831 17.307 7.85545C17.6788 10.5048 17.9887 13.1541 17.4929 15.8035C17.245 17.0651 16.6872 17.5697 15.4477 17.822C14.3321 17.8851 13.1546 17.822 11.9151 17.7589ZM12.163 9.30627C10.7376 9.24319 9.49809 10.3156 9.37413 11.6402C9.25018 13.2803 10.2418 14.3526 11.9151 14.4788C13.2166 14.5419 14.4561 13.4065 14.5801 11.9556C14.704 10.631 13.5884 9.36935 12.163 9.30627ZM16.0055 8.297C15.9435 7.91852 15.7576 7.6662 15.3238 7.6662C14.828 7.6662 14.5801 7.98161 14.5801 8.42316C14.5801 8.86472 14.828 9.18011 15.3238 9.18011C15.8196 9.11703 16.0055 8.80163 16.0055 8.297Z" />
-        </g>
-        <defs>
-          <clipPath id="clip0_4329_14085">
-            <rect width="24" height="24" />
-          </clipPath>
-        </defs>
-      </>
-    ),
-    viewBoxW: 24,
-    viewBoxH: 24,
-  },
+
   icon_AmFlag: {
     svg: (
       <>
@@ -115,6 +95,23 @@ export const SvgIconTypes: {
     ),
     viewBoxW: 18,
     viewBoxH: 16,
+  },
+  icon_download: {
+    svg: (
+      <>
+        <path d="M12.1222 15.4361L12.1222 3.39514" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+        <path d="M15.0382 12.5084L12.1222 15.4364L9.20621 12.5084" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+        <path
+          d="M16.755 8.12805H17.688C19.723 8.12805 21.372 9.77705 21.372 11.8131V16.6971C21.372 18.7271 19.727 20.3721 17.697 20.3721L6.55701 20.3721C4.52201 20.3721 2.87201 18.7221 2.87201 16.6871V11.8021C2.87201 9.77305 4.51801 8.12805 6.54701 8.12805L7.48901 8.12805"
+          stroke="white"
+          strokeWidth="1.5"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+      </>
+    ),
+    viewBoxW: 24,
+    viewBoxH: 24,
   },
 };
 
@@ -127,7 +124,17 @@ const SvgIcon = forwardRef((props: ISvgIconHOC, ref: Ref<SVGSVGElement>) => {
   };
 
   return (
-    <svg name={name} className={className} width={width} height={height} xmlns="http://www.w3.org/2000/svg" fill={fill} ref={ref} onClick={onClick} {...svgProps}>
+    <svg
+      name={name}
+      className={className}
+      width={width}
+      height={height}
+      xmlns="http://www.w3.org/2000/svg"
+      fill={fill}
+      ref={ref}
+      onClick={onClick}
+      {...svgProps}
+    >
       {svg}
     </svg>
   );

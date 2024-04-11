@@ -121,9 +121,9 @@ const useStyles = createUseStyles<string, IButtonProps, ITheme>(
         },
 
         '&:hover': {
-          '& > div > svg': {
-            fill: ({ styleType }: { styleType: InnerType }) => typeColors[styleType]?.textColorHover || '',
-          },
+          // '& > div > svg': {
+          //   fill: ({ styleType }: { styleType: InnerType }) => typeColors[styleType]?.textColorHover || '',
+          // },
           color: ({ styleType }: { styleType: InnerType }) => typeColors[styleType]?.textColorHover || '',
           // backgroundColor: ({ styleType }: { styleType: InnerType }) => typeColors[styleType]?.hover || '',
           background: ({ styleType }: { styleType: InnerType }) => typeColors[styleType]?.hover || '',

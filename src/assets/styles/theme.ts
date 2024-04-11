@@ -54,6 +54,7 @@ const DarkColors: IColors = {
     tint3: 'var(--dark-text-color-tint-3)',
     tint4: 'var(--dark-text-color-tint-4)',
     tint5: 'var(--dark-text-color-tint-5)',
+    tint6: 'var(--dark-text-color-tint-6)',
   },
   border: {
     tint1: 'var(--dark-border-tint-1)',
@@ -90,6 +91,7 @@ const LightColors: IColors = {
     tint3: 'var(--light-text-color-tint-3)',
     tint4: 'var(--light-text-color-tint-4)',
     tint5: 'var(--light-text-color-tint-5)',
+    tint6: 'var(--light-text-color-tint-6)',
   },
   border: {
     tint1: 'var(--light-border-tint-1)',

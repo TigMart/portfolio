@@ -60,7 +60,7 @@ function IntroSection() {
           </div>
         </div>
         <div className={classes.right}>
-          <img className={classes.myImg} src={myImage} alt="Tigran Martirosyan" width={560} height={675} loading="lazy" onLoad={() => setIsLoading(!isLoading)} />
+          <img className={classes.myImg} src={myImage} alt="Tigran Martirosyan" width={560} height={675} onLoad={() => setIsLoading(!isLoading)} />
         </div>
       </div>
     </section>

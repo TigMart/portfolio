@@ -6,7 +6,7 @@ import myImage from '@assets/images/photo.webp';
 import SvgIcon from '@components/helpers/SvgIcon';
 import Button from '@components/common/Button';
 import useGapSupport from '@hooks/useGapSupport';
-import myCV from '@assets/Tigran-Martirosyan-CV.pdf';
+import handleDownloadCV from '@service/downloadCV';
 
 import useStyles from './styles';
 
@@ -16,19 +16,12 @@ function IntroSection() {
   const [isLoading, setIsLoading] = useState<boolean>(false);
 
   const classes = useStyles({ isGapSupport, isLoading });
-  const handleDownloadCV = () => {
-    const link = document.createElement('a');
-    link.href = myCV;
-    link.setAttribute('download', 'Tigran_Martirosyan_CV.pdf');
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
+
   const handleHireMe = () => {
     window.location.href = 'mailto:tigran.v.mart@gmail.com?subject=Job%20Application&body=Hello%20Tigran';
   };
   return (
-    <section className={classes.root}>
+    <section id="intro" className={classes.root}>
       <div className={classNames(classes.inner, 'container')}>
         <div className={classes.left}>
           <div className={classes.leftInner}>
@@ -36,7 +29,13 @@ function IntroSection() {
             <p className={classes.fullName}>{t('intro.fullName')}</p>
             <h1 className={classes.profession}>{t('intro.profession')}</h1>
             <div className={classes.socialButtonsGroup}>
-              <a target="_blank" href="https://www.linkedin.com/in/tigran-martirosyan-b261591ab" className={classes.socialBtn} aria-label="go to Linkedin page" rel="noreferrer">
+              <a
+                target="_blank"
+                href="https://www.linkedin.com/in/tigran-martirosyan-b261591ab"
+                className={classes.socialBtn}
+                aria-label="go to Linkedin page"
+                rel="noreferrer"
+              >
                 <SvgIcon icon="icon_linkedin" fill="#BABABA" width={24} height={24} />
               </a>
               <a target="_blank" href="https://github.com/TigMart" className={classes.socialBtn} aria-label="go to Github profile" rel="noreferrer">

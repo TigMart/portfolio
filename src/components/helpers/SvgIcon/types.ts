@@ -11,7 +11,7 @@ export type IconTypes =
   | 'icon_AmFlag'
   | 'icon_github'
   | 'icon_linkedin'
-  | 'icon_instagram';
+  | 'icon_download';
 
 export interface ISvgIconChildren {
   icon: IconTypes;

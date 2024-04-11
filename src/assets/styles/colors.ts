@@ -30,7 +30,7 @@ const colors = {
         '--dark-text-color-tint-1': '#ffffff',
         '--dark-text-color-tint-2': '#959595',
         '--dark-text-color-tint-3': '#FD6F00',
-        '--dark-text-color-tint-4': '#707070',
+        '--dark-text-color-tint-4': '#CCCCCC',
         '--dark-text-color-tint-5': '#DFDFDF',
         '--dark-text-color-tint-6': '#FEFEFE',
 
@@ -71,7 +71,7 @@ const colors = {
         '--light-text-color-tint-1': '#ffffff',
         '--light-text-color-tint-2': '#959595',
         '--light-text-color-tint-3': '#FD6F00',
-        '--light-text-color-tint-4': '#707070',
+        '--light-text-color-tint-4': '#CCCCCC',
         '--light-text-color-tint-5': '#DFDFDF',
         '--light-text-color-tint-6': '#FEFEFE',
 

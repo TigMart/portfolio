@@ -1,6 +1,6 @@
 {
   "header": {
-    "nav": ["Home", "About me", "Portfolio", "Contact me"],
+    "nav": ["About me", "Portfolio", "Contact me"],
     "button": "Hire me"
   },
   "intro": {

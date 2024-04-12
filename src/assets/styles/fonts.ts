@@ -24,9 +24,13 @@ export const typography = {
       fontSize: '36px',
       lineHeight: '44px',
     },
-    [mediaQueryMax(376)]: {
+    [mediaQueryMax(400)]: {
       fontSize: '32px',
-      lineHeight: '40px',
+      lineHeight: '44px',
+    },
+    [mediaQueryMax(376)]: {
+      fontSize: '28px',
+      lineHeight: '36px',
     },
   },
   H2: {
@@ -66,6 +70,7 @@ export enum FontStyle {
 
 export const fontFamilyName = 'portfolio-font-am';
 
-export const systemFonts = 'system-ui, sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen-Sans, Ubuntu, Cantarell, Helvetica Neue, Helvetica, Arabic, sans-serif';
+export const systemFonts =
+  'system-ui, sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen-Sans, Ubuntu, Cantarell, Helvetica Neue, Helvetica, Arabic, sans-serif';
 
 export const defaultFonts = `${fontFamilyName}, ${systemFonts}`;

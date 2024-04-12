@@ -68,7 +68,15 @@ const Button = forwardRef(
     }
 
     return (
-      <button ref={ref} onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave} className={classNames(className, classes.customBtnTheme)} type={type} disabled={isDisabled} onClick={onClick}>
+      <button
+        ref={ref}
+        onMouseEnter={onMouseEnter}
+        onMouseLeave={onMouseLeave}
+        className={classNames(className, classes.customBtnTheme)}
+        type={type}
+        disabled={isDisabled}
+        onClick={onClick}
+      >
         <div className={classes.wrapper}>
           {iconLeft}
           {icon}

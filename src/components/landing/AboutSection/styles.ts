@@ -2,12 +2,7 @@ import { createUseStyles } from 'react-jss';
 
 import { ITheme, mediaQueryMax, typography } from '@assets/styles';
 
-type StyleProps = {
-  isGapSupport: boolean;
-  isLoading: boolean;
-};
-
-const useStyles = createUseStyles<string, StyleProps, ITheme>(
+const useStyles = createUseStyles(
   ({ colors, spacings, breakpoints }: ITheme) => ({
     root: {
       width: '100%',
@@ -20,10 +15,10 @@ const useStyles = createUseStyles<string, StyleProps, ITheme>(
       display: 'flex',
       flexDirection: 'column',
       alignItems: 'center',
-      paddingTop: '14rem',
-      paddingBottom: '3rem',
+      paddingTop: '8.5rem',
+      paddingBottom: '8.5rem',
       [mediaQueryMax(breakpoints.mobile)]: {
-        paddingTop: '10rem',
+        paddingTop: '6rem',
       },
     },
     heading: {

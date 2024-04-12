@@ -3,10 +3,10 @@ import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
 import myImage from '@assets/images/photo.webp';
-import SvgIcon from '@components/helpers/SvgIcon';
 import Button from '@components/common/Button';
 import useGapSupport from '@hooks/useGapSupport';
 import handleDownloadCV from '@service/downloadCV';
+import SocialIcons from '@components/common/SocialIcons';
 
 import useStyles from './styles';
 
@@ -28,20 +28,7 @@ function IntroSection() {
             <p className={classes.sayHi}>{t('intro.sayHi')}</p>
             <p className={classes.fullName}>{t('intro.fullName')}</p>
             <h1 className={classes.profession}>{t('intro.profession')}</h1>
-            <div className={classes.socialButtonsGroup}>
-              <a
-                target="_blank"
-                href="https://www.linkedin.com/in/tigran-martirosyan-b261591ab"
-                className={classes.socialBtn}
-                aria-label="go to Linkedin page"
-                rel="noreferrer"
-              >
-                <SvgIcon icon="icon_linkedin" fill="#BABABA" width={24} height={24} />
-              </a>
-              <a target="_blank" href="https://github.com/TigMart" className={classes.socialBtn} aria-label="go to Github profile" rel="noreferrer">
-                <SvgIcon icon="icon_github" fill="#BABABA" width={24} height={24} />
-              </a>
-            </div>
+            <SocialIcons />
             <div className={classes.actionButtonGroup}>
               <Button styleType="primary" name={t('intro.buttonHire')} size="large" onClick={handleHireMe} />
               <Button styleType="secondary" name={t('intro.buttonCV')} size="large" onClick={handleDownloadCV} />

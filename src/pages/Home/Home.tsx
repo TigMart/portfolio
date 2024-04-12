@@ -4,6 +4,7 @@ import { Helmet } from 'react-helmet';
 import PAGETITLES from '@constants/pageTitles';
 import Header from '@layouts/Header/Header';
 import Loading from '@components/helpers/Loading';
+import Footer from '@layouts/Footer';
 
 const IntroSection = React.lazy(() => import('@components/landing/IntroSection'));
 const AboutSection = React.lazy(() => import('@components/landing/AboutSection'));
@@ -20,6 +21,7 @@ function Home() {
 
         <AboutSection />
       </Suspense>
+      <Footer />
     </>
   );
 }

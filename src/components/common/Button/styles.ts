@@ -133,7 +133,9 @@ const useStyles = createUseStyles<string, IButtonProps, ITheme>(
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-        gap: spacings.s4,
+        '& > *': {
+          marginRight: spacings.s4,
+        },
       },
       linkBtn: { whiteSpace: 'nowrap' },
     };

@@ -1,2 +1,2 @@
-const SECTIONS = ['/', '#about', '/', '/'];
+const SECTIONS = ['#about', '/', '/'];
 export default SECTIONS;

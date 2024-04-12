@@ -44,6 +44,12 @@ const useBaseStyles = createUseStyles(({ baseFontSize, colors }: ITheme) => ({
           paddingRight: '16px',
         },
       },
+      '.flex': {
+        display: 'flex',
+      },
+      '.aic': {
+        alignItems: 'center',
+      },
     },
   }),
 }));

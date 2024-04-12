@@ -22,12 +22,15 @@ const useStyles = createUseStyles<string, StyleProps, ITheme>(
       justifyContent: 'space-between',
       alignItems: 'center',
       paddingTop: '3rem',
-      paddingBottom: '3rem',
+      paddingBottom: '8.5rem',
       [mediaQueryMax(breakpoints.mediumDesktop)]: {
         paddingTop: '6rem',
       },
       [mediaQueryMax(breakpoints.laptop)]: {
         flexDirection: 'column',
+      },
+      [mediaQueryMax(breakpoints.mobile)]: {
+        paddingBottom: '6rem',
       },
     },
     left: {
@@ -74,6 +77,10 @@ const useStyles = createUseStyles<string, StyleProps, ITheme>(
         fontSize: '2rem',
         lineHeight: '2.8rem',
       },
+      [mediaQueryMax(400)]: {
+        fontSize: '1.8rem',
+        lineHeight: '2.4rem',
+      },
     },
     fullName: {
       width: 'fit-content',
@@ -87,6 +94,10 @@ const useStyles = createUseStyles<string, StyleProps, ITheme>(
         fontSize: '2.4rem',
         lineHeight: '3rem',
       },
+      [mediaQueryMax(400)]: {
+        fontSize: '2.2rem',
+        lineHeight: '3rem',
+      },
     },
     profession: {
       width: 'fit-content',
@@ -96,31 +107,9 @@ const useStyles = createUseStyles<string, StyleProps, ITheme>(
       backgroundClip: 'text',
       '-webkit-background-clip': 'text',
       marginBottom: spacings.s32,
+      textAlign: 'center',
     },
-    socialButtonsGroup: {
-      display: 'flex',
-      alignItems: 'center',
-      marginBottom: spacings.s60,
-      [mediaQueryMax(450)]: {
-        marginBottom: spacings.s48,
-      },
-    },
-    socialBtn: {
-      width: '4rem',
-      height: '4rem',
-      backgroundColor: colors.background.tint4,
-      borderRadius: radiuses.circle,
-      border: '1px solid #BABABA',
-      display: 'flex',
-      alignItems: 'center',
-      justifyContent: 'center',
-      '&:first-child': {
-        marginRight: '2rem',
-      },
-      '&:hover': {
-        backgroundColor: colors.background.tint2,
-      },
-    },
+
     actionButtonGroup: {
       display: 'flex',
       alignItems: 'center',
@@ -130,7 +119,9 @@ const useStyles = createUseStyles<string, StyleProps, ITheme>(
         marginRight: (props: StyleProps) => (props.isGapSupport ? '0' : spacings.s24),
       },
       marginBottom: '8rem',
+      marginTop: '6rem',
       [mediaQueryMax(450)]: {
+        marginTop: spacings.s48,
         marginBottom: spacings.s60,
         gap: spacings.s12,
         '& > button:first-child': {
@@ -146,6 +137,9 @@ const useStyles = createUseStyles<string, StyleProps, ITheme>(
       padding: spacings.s24,
       borderRadius: radiuses.r8,
       boxShadow: 'rgba(0, 0, 0, 0.6) 0px 2px 2px',
+      [mediaQueryMax(breakpoints.mobile)]: {
+        padding: spacings.s16,
+      },
     },
     infoItem: {
       display: 'flex',
@@ -181,7 +175,6 @@ const useStyles = createUseStyles<string, StyleProps, ITheme>(
     },
     myImg: {
       display: 'block',
-      aspectRatio: '1 / 1',
       objectFit: 'cover',
       objectPosition: 'center',
       [mediaQueryMax(breakpoints.mediumDesktop)]: {

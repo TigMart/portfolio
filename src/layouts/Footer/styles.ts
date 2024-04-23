@@ -35,7 +35,18 @@ const useStyles = createUseStyles<string, StyleProps, ITheme>(
         },
       },
     },
-
+    top: {
+      width: '100%',
+      maxWidth: '415px',
+      display: 'flex',
+      justifyContent: 'space-between',
+      '& > div': {
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        justifyContent: 'space-between',
+      },
+    },
     logo: {
       display: 'block',
       height: '48px',
@@ -48,7 +59,8 @@ const useStyles = createUseStyles<string, StyleProps, ITheme>(
     navList: {
       display: 'flex',
       alignItems: 'center',
-      gap: '6rem',
+      flexDirection: 'column',
+      gap: '3rem',
 
       lineHeight: '28px',
       [mediaQueryMax(breakpoints.laptop)]: {
@@ -60,10 +72,9 @@ const useStyles = createUseStyles<string, StyleProps, ITheme>(
       },
     },
     item: {
-      marginRight: (props: StyleProps) => (props.isGapSupport ? '0' : '6rem'),
+      marginBottom: (props: StyleProps) => (props.isGapSupport ? '0' : '3rem'),
       [mediaQueryMax(breakpoints.laptop)]: {
-        marginRight: (props: StyleProps) => (props.isGapSupport ? '0' : '1.2rem'),
-        // marginBottom: (props: StyleProps) => (props.isGapSupport ? '0' : '1.6rem'),
+        marginBottom: (props: StyleProps) => (props.isGapSupport ? '0' : '1.2rem'),
       },
     },
     link: {

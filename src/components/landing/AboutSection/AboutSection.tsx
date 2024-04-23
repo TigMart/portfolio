@@ -42,13 +42,11 @@ function AboutSection() {
   }, []);
 
   return (
-    <section className={classes.root}>
+    <section id="about" className={classes.root}>
       <div className={classNames(classes.inner, 'container')}>
         <h2 className={classes.heading}>{t('about.title.0')}</h2>
         <p className={classes.subTitle}>{t('about.subTitle')}</p>
-        <p id="about" className={classes.content}>
-          {t('about.content')}
-        </p>
+        <p className={classes.content}>{t('about.content')}</p>
         <Button
           type="button"
           styleType="primary"

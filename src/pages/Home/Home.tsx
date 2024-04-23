@@ -18,7 +18,6 @@ function Home() {
       <Header />
       <Suspense fallback={<Loading />}>
         <IntroSection />
-
         <AboutSection />
       </Suspense>
       <Footer />

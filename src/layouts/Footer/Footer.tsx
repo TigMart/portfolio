@@ -18,22 +18,26 @@ function Footer() {
   return (
     <footer className={classes.root}>
       <div className={classNames(classes.inner, 'container')}>
-        <Link to="/" className={classes.logo}>
-          <img src="/logo.webp" alt="Tigran's portfolio logo" width={40} height={48} />
-        </Link>
+        <div className={classes.top}>
+          <div>
+            <Link to="/" className={classes.logo}>
+              <img src="/logo.webp" alt="Tigran's portfolio logo" width={40} height={48} />
+            </Link>
+            <SocialIcons />
+          </div>
+          <nav className={classes.nav}>
+            <ul className={classes.navList}>
+              {SECTIONS.map((section, index) => (
+                <li key={uuidv4()} className={classes.item}>
+                  <a href={section} className={classes.link}>
+                    {t(`header.nav.${index}`)}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </nav>
+        </div>
 
-        <nav className={classes.nav}>
-          <ul className={classes.navList}>
-            {SECTIONS.map((section, index) => (
-              <li key={uuidv4()} className={classes.item}>
-                <a href={section} className={classes.link}>
-                  {t(`header.nav.${index}`)}
-                </a>
-              </li>
-            ))}
-          </ul>
-        </nav>
-        <SocialIcons />
         <div className={classes.infoBox}>
           <div className="flex aic">
             <SvgIcon icon="icon_mail" width={24} height={24} />

@@ -16,6 +16,7 @@ export default defineConfig({
       '@store': path.resolve(__dirname, './src/store'),
       '@constants': path.resolve(__dirname, './src/constants'),
       '@service': path.resolve(__dirname, './src/service'),
+      '@animation': path.resolve(__dirname, './src/animation'),
     },
     extensions: ['.js', '.jsx', '.json', '.css', '.ts', '.tsx'],
   },

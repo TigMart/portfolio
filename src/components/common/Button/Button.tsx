@@ -26,6 +26,10 @@ const Button = forwardRef(
       className,
       padding,
       onMouseEnter,
+      onMouseMove,
+      onMouseUp,
+      onMouseDown,
+      onMouseOut,
       classNameLink,
       onMouseLeave,
     }: IButtonProps,
@@ -51,6 +55,9 @@ const Button = forwardRef(
             ref={ref}
             onMouseEnter={onMouseEnter}
             onMouseLeave={onMouseLeave}
+            onMouseMove={onMouseMove}
+            onMouseUp={onMouseUp}
+            onMouseDown={onMouseDown}
             type={type}
             className={classNames(className, classes.customBtnTheme, classes.linkBtn)}
             disabled={isDisabled}
@@ -72,6 +79,11 @@ const Button = forwardRef(
         ref={ref}
         onMouseEnter={onMouseEnter}
         onMouseLeave={onMouseLeave}
+        onMouseMove={onMouseMove}
+        onMouseUp={onMouseUp}
+        onMouseDown={onMouseDown}
+        onMouseOut={onMouseOut}
+        onBlur={() => {}}
         className={classNames(className, classes.customBtnTheme)}
         type={type}
         disabled={isDisabled}

@@ -2,13 +2,20 @@ import { createUseStyles } from 'react-jss';
 
 import { ITheme, mediaQueryMax, typography } from '@assets/styles';
 
-const useStyles = createUseStyles(
+import { Animation } from './type';
+
+interface IStyleProps {
+  rotation: Animation;
+}
+
+const useStyles = createUseStyles<string, IStyleProps, ITheme>(
   ({ colors, spacings, breakpoints }: ITheme) => ({
     root: {
       width: '100%',
       display: 'flex',
       justifyContent: 'center',
       alignItems: 'center',
+      position: 'relative',
     },
     inner: {
       width: '100%',
@@ -44,6 +51,30 @@ const useStyles = createUseStyles(
         marginBottom: '4.4rem',
         fontSize: '1.6rem',
         lineHeight: '2.6rem',
+      },
+    },
+
+    skills: {
+      marginTop: spacings.s64,
+      display: 'flex',
+      flexDirection: 'column',
+      alignItems: 'center',
+    },
+
+    buttonsContainer: {
+      display: 'flex',
+      flexWrap: 'wrap',
+      justifyContent: 'center',
+      gap: spacings.s12,
+      marginTop: spacings.s32,
+      transition: 'all .3s ease-in',
+      backfaceVisibility: 'hidden',
+    },
+    skill: {
+      transition: 'box-shadow 0.1s, transform 0.1s',
+      '&:hover': {
+        boxShadow: '0px 0px 30px rgba(0,0,0, 0.6)',
+        backgroundColor: 'rgba(255, 255, 255, 0.04)',
       },
     },
   }),

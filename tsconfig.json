@@ -19,7 +19,8 @@
       "@pages/*": ["src/pages/*"],
       "@store/*": ["src/store/*"],
       "@constants/*": ["src/constants/*"],
-      "@service/*": ["src/service/*"]
+      "@service/*": ["src/service/*"],
+      "@animation/*": ["src/animation/*"]
     },
 
     /* Bundler mode */

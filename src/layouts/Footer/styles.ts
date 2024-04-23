@@ -22,9 +22,9 @@ const useStyles = createUseStyles<string, StyleProps, ITheme>(
       justifyContent: 'center',
       paddingTop: spacings.s40,
       paddingBottom: spacings.s24,
-      gap: spacings.s50,
+      gap: spacings.s32,
       '& > *': {
-        marginBottom: (props: StyleProps) => (props.isGapSupport ? '0' : spacings.s50),
+        marginBottom: (props: StyleProps) => (props.isGapSupport ? '0' : spacings.s32),
       },
       [mediaQueryMax(breakpoints.mobile)]: {
         gap: spacings.s30,
@@ -33,18 +33,6 @@ const useStyles = createUseStyles<string, StyleProps, ITheme>(
         '& > *': {
           marginBottom: (props: StyleProps) => (props.isGapSupport ? '0' : spacings.s30),
         },
-      },
-    },
-    top: {
-      width: '100%',
-      maxWidth: '415px',
-      display: 'flex',
-      justifyContent: 'space-between',
-      '& > div': {
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center',
-        justifyContent: 'space-between',
       },
     },
     logo: {
@@ -59,8 +47,7 @@ const useStyles = createUseStyles<string, StyleProps, ITheme>(
     navList: {
       display: 'flex',
       alignItems: 'center',
-      flexDirection: 'column',
-      gap: '3rem',
+      gap: '6rem',
 
       lineHeight: '28px',
       [mediaQueryMax(breakpoints.laptop)]: {
@@ -72,9 +59,9 @@ const useStyles = createUseStyles<string, StyleProps, ITheme>(
       },
     },
     item: {
-      marginBottom: (props: StyleProps) => (props.isGapSupport ? '0' : '3rem'),
+      marginRight: (props: StyleProps) => (props.isGapSupport ? '0' : '6rem'),
       [mediaQueryMax(breakpoints.laptop)]: {
-        marginBottom: (props: StyleProps) => (props.isGapSupport ? '0' : '1.2rem'),
+        marginRight: (props: StyleProps) => (props.isGapSupport ? '0' : '1.2rem'),
       },
     },
     link: {
@@ -108,7 +95,7 @@ const useStyles = createUseStyles<string, StyleProps, ITheme>(
         width: '100%',
         height: '1px',
         position: 'absolute',
-        bottom: '-26px',
+        bottom: '-22px',
         backgroundColor: colors.text.tint2,
         [mediaQueryMax(breakpoints.mobile)]: {
           bottom: '-16px',
@@ -122,7 +109,7 @@ const useStyles = createUseStyles<string, StyleProps, ITheme>(
       marginLeft: spacings.s12,
     },
     copyright: {
-      fontSize: '1.6rem',
+      fontSize: '1.4rem',
       color: colors.text.tint4,
       [mediaQueryMax(breakpoints.mobile)]: {
         fontSize: '1.2rem',

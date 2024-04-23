@@ -20,6 +20,7 @@ const useBaseStyles = createUseStyles(({ baseFontSize, colors }: ITheme) => ({
         backgroundColor: colors.background.tint2,
         width: '100%',
         height: '100%',
+        overflowX: 'hidden',
       },
 
       '.container': {

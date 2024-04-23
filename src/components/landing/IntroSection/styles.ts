@@ -12,6 +12,7 @@ const useStyles = createUseStyles<string, StyleProps, ITheme>(
   ({ colors, spacings, radiuses, breakpoints }: ITheme) => ({
     root: {
       width: '100%',
+      height: 'calc(100vh - 7rem)',
       display: 'flex',
       justifyContent: 'center',
       alignItems: 'center',

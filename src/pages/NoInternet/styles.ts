@@ -1,6 +1,6 @@
 import { createUseStyles } from 'react-jss';
 
-import image from '@assets/images/noInternet.webp';
+import image from '@images/noInternet.webp';
 
 const useStyles = createUseStyles(
   () => ({

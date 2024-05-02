@@ -2,19 +2,19 @@
 import { PropsWithChildren, ReactNode } from 'react';
 import { ThemeProvider } from 'react-jss';
 
-import { themeDark, useBaseStyles } from '@assets/styles';
+import { themeDark, useBaseStyles } from '@styles/';
 
 interface ISingleToolsBootstrap {
   children: ReactNode;
 }
 
-function StyledWrapper({ children }: PropsWithChildren<unknown>) {
+const StyledWrapper = ({ children }: PropsWithChildren<unknown>) => {
   useBaseStyles();
 
   return <>{children}</>;
-}
+};
 
-function SingleToolsBootstrap({ children }: ISingleToolsBootstrap) {
+const SingleToolsBootstrap = ({ children }: ISingleToolsBootstrap) => {
   // const { isEnabled } = useMemoSelector(state => ({
   //   isEnabled: getIsEnabled(state),
   // }));
@@ -25,6 +25,6 @@ function SingleToolsBootstrap({ children }: ISingleToolsBootstrap) {
       <StyledWrapper>{children}</StyledWrapper>
     </ThemeProvider>
   );
-}
+};
 
 export default SingleToolsBootstrap;

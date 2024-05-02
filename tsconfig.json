@@ -9,10 +9,14 @@
     "allowJs": false,
     "sourceMap": true,
     "esModuleInterop": true,
+    "importHelpers": true,
     "rootDir": ".",
     "baseUrl": "./",
     "paths": {
-      "@assets/*": ["src/assets/*"],
+      "@fonts/*": ["src/assets/fonts/*"],
+      "@images/*": ["src/assets/images/*"],
+      "@documents/*": ["src/assets/documents/*"],
+      "@styles/*": ["src/assets/styles/index"],
       "@components/*": ["src/components/*"],
       "@hooks/*": ["src/hooks/*"],
       "@layouts/*": ["src/layouts/*"],
@@ -20,7 +24,7 @@
       "@store/*": ["src/store/*"],
       "@constants/*": ["src/constants/*"],
       "@service/*": ["src/service/*"],
-      "@animation/*": ["src/animation/*"]
+      "@validations/*": ["src/validations/*"]
     },
 
     /* Bundler mode */

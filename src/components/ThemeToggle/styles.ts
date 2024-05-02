@@ -1,6 +1,6 @@
 import { createUseStyles } from 'react-jss';
 
-import { ITheme, mediaQueryMax } from '@assets/styles';
+import { ITheme, mediaQueryMax } from '@styles/';
 
 const useStyles = createUseStyles(
   ({ breakpoints }: ITheme) => ({

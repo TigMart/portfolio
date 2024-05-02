@@ -1,6 +1,6 @@
 import useStyles from './styles';
 
-function Loading() {
+const Loading = () => {
   const classes = useStyles();
 
   return (
@@ -8,6 +8,6 @@ function Loading() {
       <div className={classes.spinner} />
     </div>
   );
-}
+};
 
 export default Loading;

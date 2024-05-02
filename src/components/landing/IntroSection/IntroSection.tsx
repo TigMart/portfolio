@@ -2,7 +2,7 @@ import classNames from 'classnames';
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
-import myImage from '@assets/images/photo.webp';
+import myImage from '@images/photo.webp';
 import Button from '@components/common/Button';
 import useGapSupport from '@hooks/useGapSupport';
 import handleDownloadCV from '@service/downloadCV';
@@ -10,7 +10,7 @@ import SocialIcons from '@components/common/SocialIcons';
 
 import useStyles from './styles';
 
-function IntroSection() {
+const IntroSection = () => {
   const { t } = useTranslation();
   const isGapSupport = useGapSupport();
   const [isLoading, setIsLoading] = useState<boolean>(false);
@@ -51,6 +51,6 @@ function IntroSection() {
       </div>
     </section>
   );
-}
+};
 
 export default IntroSection;

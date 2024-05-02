@@ -14,8 +14,9 @@ const colors = {
         '--dark-white': '#ffffff',
         '--dark-black': '#000000',
 
-        // status
-        '--dark-error': '#FF3333',
+        // status //#eb3942
+        '--dark-error': '#c9002c',
+
         '--dark-success': '#00A91B',
 
         // Backgrounds
@@ -24,6 +25,7 @@ const colors = {
         '--dark-bg-tint-2': '#1E1E1E',
         '--dark-bg-tint-3': '#959595',
         '--dark-bg-tint-4': 'rgba(255,255,255,0.04)',
+        '--dark-bg-tint-5': 'rgba(255,255,255,0.08)',
 
         // Text
 

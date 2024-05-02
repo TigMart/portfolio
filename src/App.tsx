@@ -5,7 +5,7 @@ import NotFoundPage from '@pages/NotFoundPage';
 import useNetwork from '@hooks/useNetwork';
 import NoInternet from '@pages/NoInternet';
 
-function App() {
+const App = () => {
   const isOnline = useNetwork();
 
   return isOnline ? (
@@ -16,6 +16,6 @@ function App() {
   ) : (
     <NoInternet />
   );
-}
+};
 
 export default App;

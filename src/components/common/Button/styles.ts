@@ -2,7 +2,7 @@
 /* eslint-disable @typescript-eslint/no-unsafe-return */
 import { createUseStyles } from 'react-jss';
 
-import { FontWeight, ITheme } from '@assets/styles';
+import { FontWeight, ITheme } from '@styles/';
 
 import { ButtonStyleType, IButtonProps, StateColors } from './type';
 
@@ -137,6 +137,7 @@ const useStyles = createUseStyles<string, IButtonProps, ITheme>(
           marginRight: spacings.s4,
         },
       },
+
       linkBtn: { whiteSpace: 'nowrap' },
     };
   },

@@ -1,6 +1,6 @@
 import useStyles from './styles';
 
-function NoInternet() {
+const NoInternet = () => {
   const classes = useStyles();
 
   const handleRefresh = () => {
@@ -25,6 +25,6 @@ function NoInternet() {
       </div>
     </section>
   );
-}
+};
 
 export default NoInternet;

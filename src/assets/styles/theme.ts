@@ -47,6 +47,7 @@ const DarkColors: IColors = {
     tint2: 'var(--dark-bg-tint-2)',
     tint3: 'var(--dark-bg-tint-3)',
     tint4: 'var(--dark-bg-tint-4)',
+    tint5: 'var(--dark-bg-tint-5)',
   },
   text: {
     tint1: 'var(--dark-text-color-tint-1)',

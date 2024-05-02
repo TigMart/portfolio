@@ -2,7 +2,7 @@ import SvgIcon from '@components/helpers/SvgIcon';
 
 import useStyles from './styles';
 
-function SocialIcons() {
+const SocialIcons = () => {
   const classes = useStyles();
   return (
     <div className={classes.socialButtonsGroup}>
@@ -20,6 +20,6 @@ function SocialIcons() {
       </a>
     </div>
   );
-}
+};
 
 export default SocialIcons;

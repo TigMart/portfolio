@@ -10,7 +10,7 @@ import SKILLS from '@constants/skills';
 
 import useStyles from './styles';
 
-function AboutSection() {
+const AboutSection = () => {
   const { t } = useTranslation();
   const [buttonsVisible, setButtonsVisible] = useState<boolean>(false);
   const buttonsContainerRef = useRef(null);
@@ -76,6 +76,6 @@ function AboutSection() {
       </div>
     </section>
   );
-}
+};
 
 export default AboutSection;

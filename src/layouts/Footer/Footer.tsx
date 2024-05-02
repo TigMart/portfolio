@@ -10,7 +10,7 @@ import SvgIcon from '@components/helpers/SvgIcon';
 
 import useStyles from './styles';
 
-function Footer() {
+const Footer = () => {
   const isGapSupport = useGapSupport();
 
   const classes = useStyles({ isGapSupport });
@@ -54,6 +54,6 @@ function Footer() {
       </div>
     </footer>
   );
-}
+};
 
 export default Footer;

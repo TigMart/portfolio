@@ -16,7 +16,7 @@ const LANG = {
   am: { nativeName: 'Armenian' },
 };
 
-function Header() {
+const Header = () => {
   const { t, i18n } = useTranslation();
   const isGapSupport = useGapSupport();
   const [isOpen, setIsOpen] = useState<boolean>(false);
@@ -71,6 +71,6 @@ function Header() {
       </div>
     </header>
   );
-}
+};
 
 export default Header;

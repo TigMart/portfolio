@@ -5,7 +5,7 @@ import PAGETITLES from '@constants/pageTitles';
 
 import useStyles from './styles';
 
-function NotFoundPage() {
+const NotFoundPage = () => {
   const styles = useStyles();
   return (
     <>
@@ -21,6 +21,6 @@ function NotFoundPage() {
       </div>
     </>
   );
-}
+};
 
 export default NotFoundPage;

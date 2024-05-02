@@ -1,6 +1,6 @@
 import { createUseStyles } from 'react-jss';
 
-import { FontWeight, ITheme } from '@assets/styles';
+import { FontWeight, ITheme } from '@styles/';
 
 const useStyles = createUseStyles(
   ({ colors }: ITheme) => ({

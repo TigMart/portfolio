@@ -1,6 +1,6 @@
 import { createUseStyles } from 'react-jss';
 
-import { FontWeight, ITheme, mediaQueryMax } from '@assets/styles';
+import { FontWeight, ITheme, mediaQueryMax } from '@styles/';
 
 type StyleProps = {
   isGapSupport: boolean;

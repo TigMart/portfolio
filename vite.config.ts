@@ -8,7 +8,10 @@ import react from '@vitejs/plugin-react';
 export default defineConfig({
   resolve: {
     alias: {
-      '@assets': path.resolve(__dirname, './src/assets'),
+      '@fonts': path.resolve(__dirname, './src/assets/fonts'),
+      '@images': path.resolve(__dirname, './src/assets/images'),
+      '@styles': path.resolve(__dirname, './src/assets/styles'),
+      '@documents': path.resolve(__dirname, './src/assets/documents'),
       '@components': path.resolve(__dirname, './src/components'),
       '@hooks': path.resolve(__dirname, './src/hooks'),
       '@layouts': path.resolve(__dirname, './src/layouts'),
@@ -16,7 +19,7 @@ export default defineConfig({
       '@store': path.resolve(__dirname, './src/store'),
       '@constants': path.resolve(__dirname, './src/constants'),
       '@service': path.resolve(__dirname, './src/service'),
-      '@animation': path.resolve(__dirname, './src/animation'),
+      '@validations': path.resolve(__dirname, './src/validations'),
     },
     extensions: ['.js', '.jsx', '.json', '.css', '.ts', '.tsx'],
   },

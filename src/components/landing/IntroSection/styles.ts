@@ -1,7 +1,7 @@
 import { createUseStyles } from 'react-jss';
 
-import { FontWeight, ITheme, mediaQueryMax, typography } from '@assets/styles';
-import vector from '@assets/images/vector.webp';
+import { FontWeight, ITheme, mediaQueryMax, typography } from '@styles/';
+import vector from '@images/vector.webp';
 
 type StyleProps = {
   isGapSupport: boolean;
@@ -16,6 +16,9 @@ const useStyles = createUseStyles<string, StyleProps, ITheme>(
       display: 'flex',
       justifyContent: 'center',
       alignItems: 'center',
+      [mediaQueryMax(breakpoints.laptop)]: {
+        height: '100%',
+      },
     },
     inner: {
       width: '100%',
@@ -108,7 +111,10 @@ const useStyles = createUseStyles<string, StyleProps, ITheme>(
       backgroundClip: 'text',
       '-webkit-background-clip': 'text',
       marginBottom: spacings.s32,
-      textAlign: 'center',
+      textAlign: 'left',
+      [mediaQueryMax(breakpoints.laptop)]: {
+        textAlign: 'center',
+      },
     },
 
     actionButtonGroup: {

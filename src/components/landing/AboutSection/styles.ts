@@ -1,6 +1,6 @@
 import { createUseStyles } from 'react-jss';
 
-import { ITheme, mediaQueryMax, typography } from '@assets/styles';
+import { ITheme, mediaQueryMax, typography } from '@styles/';
 
 import { Animation } from './type';
 
@@ -78,7 +78,7 @@ const useStyles = createUseStyles<string, IStyleProps, ITheme>(
       },
     },
   }),
-  { name: 'about-section' },
+  { name: 'about' },
 );
 
 export default useStyles;

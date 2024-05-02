@@ -1,4 +1,4 @@
-import myCV from '@assets/Tigran-Martirosyan-CV.pdf';
+import myCV from '@documents/Tigran-Martirosyan-CV.pdf';
 
 const handleDownloadCV = () => {
   const link = document.createElement('a');

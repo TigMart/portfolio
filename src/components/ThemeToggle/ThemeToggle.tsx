@@ -8,7 +8,7 @@ import SvgIcon from '@components/helpers/SvgIcon';
 
 import useStyles from './styles';
 
-function ThemeToggle() {
+const ThemeToggle = () => {
   const styles = useStyles();
   const isEnabled = useMemoSelector(getThemeState);
   const dispatch = useAppDispatch();
@@ -23,11 +23,20 @@ function ThemeToggle() {
             <SvgIcon icon="icon_sun" width={24} height={24} />
             <SvgIcon icon="icon_moon" width={24} height={24} />
           </div>
-          <input className={styles.checkboxInput} id="toggle" name="toggle" type="checkbox" checked={isEnabled} onChange={handleThemeChange} readOnly aria-label="Change theme button" />
+          <input
+            className={styles.checkboxInput}
+            id="toggle"
+            name="toggle"
+            type="checkbox"
+            checked={isEnabled}
+            onChange={handleThemeChange}
+            readOnly
+            aria-label="Change theme button"
+          />
         </div>
       </label>
     </div>
   );
-}
+};
 
 export default ThemeToggle;

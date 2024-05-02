@@ -68,6 +68,7 @@ module.exports = {
     ],
 
     '@typescript-eslint/no-unused-vars': 'warn',
+    'react/jsx-props-no-spreading': 0,
     'unused-imports/no-unused-imports': 'error',
     'unused-imports/no-unused-vars': [
       'warn',
@@ -92,5 +93,20 @@ module.exports = {
       },
     ],
     'import/newline-after-import': 'error',
+    'react/function-component-definition': [
+      'error',
+      {
+        namedComponents: ['arrow-function'],
+        unnamedComponents: ['arrow-function'],
+      },
+    ],
+    '@typescript-eslint/no-misused-promises': [
+      2,
+      {
+        checksVoidReturn: {
+          attributes: false,
+        },
+      },
+    ],
   },
 };

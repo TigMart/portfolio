@@ -1,6 +1,6 @@
 import { createUseStyles } from 'react-jss';
 
-import { ITheme } from '@assets/styles';
+import { ITheme } from '@styles/';
 
 const useStyles = createUseStyles(({ colors, radiuses }: ITheme) => ({
   socialButtonsGroup: {

@@ -8,8 +8,9 @@ import Footer from '@layouts/Footer';
 
 const IntroSection = React.lazy(() => import('@components/landing/IntroSection'));
 const AboutSection = React.lazy(() => import('@components/landing/AboutSection'));
+const ContactMe = React.lazy(() => import('@components/landing/ContactMe'));
 
-function Home() {
+const Home = () => {
   return (
     <>
       <Helmet>
@@ -19,10 +20,11 @@ function Home() {
       <Suspense fallback={<Loading />}>
         <IntroSection />
         <AboutSection />
+        <ContactMe />
       </Suspense>
       <Footer />
     </>
   );
-}
+};
 
 export default Home;
